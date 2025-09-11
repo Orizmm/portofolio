@@ -1,6 +1,7 @@
 {
-  "name": "portofolio",
   "homepage": "https://orizmm.github.io/portfolio/",
+  "name": "portofolio",
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
