@@ -1,38 +1,198 @@
 import React from "react";
-import gambar from "../assets/hero.svg";
+import gambar from "../assets/img/profile/pp bulat.png";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import Sertif_nvidia from "../assets/img/sertif/sertif_nvidia.png";
+import Sertif_ITbox_DA_Basic from "../assets/img/sertif/ITBox-Certificate_Data-Analyst-Level-Basic_alghorizmi.m.jpg";
+import Sertif_ITbox_DA_Intermediate from "../assets/img/sertif/ITBox-Certificate_Data-Analyst-Level-Intermediate_alghorizmi.m.jpg";
 
 const About = () => {
+    const skills = [
+        "Python",
+        "SQL",
+        "Machine Learning",
+        "Laravel",
+        "Flask",
+        "Bootstrap",
+        "Data Visualization",
+        "GIS",
+    ];
+
+    const tools = [
+        "VS Code",
+        "Colab",
+        "Jupyter Notebook",
+        "Git",
+        "GitHub",
+        "Tableau",
+        "Power BI",
+        "Excel",
+        "Figma",
+        "Canva",
+    ];
+
+    const sertif = [
+        {
+            img: Sertif_nvidia,
+            title: "Getting Started with Deep Learning",
+            issued: "Jun 2025",
+        },
+        {
+            img: Sertif_ITbox_DA_Intermediate,
+            title: "ITBOX Data Analyst Level Intermediate",
+            issued: "May 2025",
+        },
+        {
+            img: Sertif_ITbox_DA_Basic,
+            title: "ITBOX Data Analyst Level Basic",
+            issued: "Apr 2025",
+        },
+    ];
+
     return (
-        <section id="about">
-            <div className="about bg-base-200 py-10">
-                <div className="about-content flex flex-col-reverse lg:flex-row lg:items-center lg:justify-between lg:px-20">
-                    <img src={gambar} alt="" className="img-about max-w-sm mx-auto" />
-                    <div className="text-left lg:w-2/3 px-5">
-                        <h1 className="text-6xl text-center mb-10 text-primary font-bold">
-                            Who Am I
-                        </h1>
-                        <p className="text-xl mb-5">
-                            I am a <span className="font-bold text-primary">Junior Data Analyst</span> who is
-                            passionate about data and technology. I am a tech
-                            enthusiast who loves to explore new things. I am a highly motivated and hardworking
-                            individual who is always eager to learn new things.
-                            I am a team player who is always ready to
-                            collaborate with others to get the job done.
-                        </p>
-                        <p className="text-xl">
-                            I have a strong analytical and problem-solving
-                            skills. I have a good understanding of data analysis
-                            and data visualization. I have experience working
-                            with various data analysis tools such as Python,
-                            SQL, and Tableau. I have a good understanding of
-                            statistical analysis and machine learning. I am
-                            always looking for new challenges and opportunities
-                            to grow and improve my skills.
-                        </p>
-                    </div>
+        <>
+            <Navbar />
+            <div className="max-w-7xl mx-auto flex flex-col relative">
+                <div class="mt-10 bg-base-200 px-5 py-5 md:px-12 md:py-10 text-left shadow-lg rounded-3xl text-amber-50 mx-3 mb-5">
+                    <article data-page="about">
+                        <header>
+                            <div class="text-2xl font-bold text-primary mb-5 fadein-bot title-section flex items-center">
+                                About Me &nbsp;
+                                <div
+                                    class="h-[1px] w-32 bg-primary md:w-96 aos-init aos-animate"
+                                    data-aos="zoom-in-left"
+                                    data-aos-duration="600"
+                                ></div>
+                            </div>
+                        </header>
+                        <section class="text-sm md:text-lg text-justify flex flex-col gap-4 md:flex-row md:gap-8 md:justify-center md:items-center">
+                            <div class="flex justify-center md:w-7/12">
+                                <img
+                                    class="w-9/12 mb-3 fadein-up"
+                                    src={gambar}
+                                    alt="Foto"
+                                />
+                            </div>
+                            <div class="md:w-7/12">
+                                <p class="mb-3 md:mb-7 fadein-left fadeins-1">
+                                    Hello, my name is Muhammad Al Ghorizmi
+                                    Muttaqin, a data enthusiast with a
+                                    background in information technology
+                                    systems, focusing on research and spatial
+                                    data analysis. Currently, I am a final-year
+                                    student who has transitioned from over one
+                                    years of experience in course program
+                                    management and project-based work to pursue
+                                    a career in data analytics. My expertise
+                                    includes research, analytical thinking, and
+                                    project management, which provide a strong
+                                    foundation for roles as a data scientist or
+                                    analyst. I am proficient in spreadsheets,
+                                    Python, SQL, business intelligence tools,
+                                    and GIS for deriving insights from complex
+                                    datasets. With a commitment to continuous
+                                    learning, I strive to stay updated on the
+                                    latest trends and methodologies in data
+                                    analysis and aim to leverage data to support
+                                    informed decision-making.
+                                </p>
+                            </div>
+                        </section>
+
+                        {/* Skills Section */}
+                        <section className="mt-10">
+                            <h2 className="text-xl md:text-2xl font-bold text-primary mb-5">
+                                Skills
+                            </h2>
+                            <div className="flex flex-wrap gap-3">
+                                {skills.map((skill, index) => (
+                                    <span
+                                        key={index}
+                                        className="px-4 py-2 bg-gray-800 text-white rounded-full text-sm md:text-base shadow-md hover:bg-primary hover:text-black transition"
+                                    >
+                                        {skill}
+                                    </span>
+                                ))}
+                            </div>
+                        </section>
+
+                        {/* Tools Section */}
+                        <section className="mt-10">
+                            <h2 className="text-xl md:text-2xl font-bold text-primary mb-5">
+                                Tools
+                            </h2>
+                            <div className="flex flex-wrap gap-3">
+                                {tools.map((skill, index) => (
+                                    <span
+                                        key={index}
+                                        className="px-4 py-2 bg-gray-800 text-white rounded-full text-sm md:text-base shadow-md hover:bg-primary hover:text-black transition"
+                                    >
+                                        {skill}
+                                    </span>
+                                ))}
+                            </div>
+                        </section>
+                    </article>
+                </div>
+
+                {/* sertifikat */}
+                <div className="mt-6 bg-base-200 px-5 py-5 md:px-12 md:py-10 text-left shadow-lg rounded-3xl text-amber-50 mx-3 mb-5">
+                    <article data-page="about">
+                        <h2 className="text-xl md:text-2xl font-bold text-primary mb-6 flex items-center">
+                            Certificates &nbsp;
+                            <div
+                                className="h-[1px] w-32 bg-primary md:w-96 aos-init aos-animate"
+                                data-aos="zoom-in-left"
+                                data-aos-duration="600"
+                            ></div>
+                        </h2>
+                        <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-3 xl:grid-cols-3 xl:gap-3 2xl:gap-5">
+                            {sertif.map((prj, index) => (
+                                <div className="item-card flex flex-col items-center gap-2 rounded border border-[#FFA500] rounded-2xl text-amber-50 md:gap-3 px-5 py-5 lg:px-5 shadow-sm md:hover:-translate-y-2 transition-transform duration-300">
+                                    <div
+                                        key={index}
+                                        className="flex w-13 h-13 items-center justify-center p-0 h-full w-full lg:p-0"
+                                    >
+                                        <img
+                                            src={prj.img}
+                                            alt="{prj.title}"
+                                            className="drop-shadow-xl rounded rounded-xl"
+                                        />
+                                    </div>
+                                    <div className="w-full flex flex-col gap-2 items-start text-sm md:text-base lg:text-lg">
+                                        <h2 className="title-text font-medium text-[#FFA500]">
+                                            {prj.title}
+                                        </h2>
+                                        <p className="w-full text-left text-[10px] text-[#c1c1c1] md:text-xs lg:text-sm">
+                                            {prj.issued}
+                                        </p>
+                                        <div className="w-full flex justify-end mt-4">
+                                            <a href="" target="_blank">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    fill="none"
+                                                    viewBox="0 0 24 24"
+                                                    strokeWidth="1.5"
+                                                    stroke="currentColor"
+                                                    className="size-6 hover:text-primary"
+                                                >
+                                                    <path
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
+                                                        d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                                                    />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </article>
                 </div>
             </div>
-        </section>
+            <Footer />
+        </>
     );
 };
 

@@ -1,8 +1,8 @@
-import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Hero from "./pages/Hero";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import Footer from "./components/Footer";
+import Experience from "./pages/Experience";
 import Loading from "./components/Loading";
 import { useEffect, useState } from "react";
 
@@ -20,13 +20,14 @@ function App() {
             {loading ? (
                 <Loading />
             ) : (
-                <div>
-                    <Navbar />
-                    <Hero />
-                    <About />
-                    <Projects />
-                    <Footer />
-                </div>
+                    <Router>
+                        <Routes>
+                            <Route path="/" element={<Hero />} />
+                            <Route path="/about" element={<About />} />
+                            <Route path="/projects" element={<Projects />} />
+                            <Route path="/blog" element={<Experience />} />
+                        </Routes>
+                    </Router>
             )}
         </>
     );
