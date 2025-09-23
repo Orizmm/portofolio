@@ -169,8 +169,8 @@ const Navbar = () => {
                 <div className="navbar-end hidden lg:flex">
                     <a
                         className="btn text-xl text-neutral transition-colors duration-300 bg-[#FFA500] border-none hover:bg-primary hover:text-white"
-                        href="/resume.pdf"
-                        target="_blank"
+                        href="/Resume Muhammad Al Ghorizmi Muttaqin.pdf"
+                        download="Muhammad_Al_Ghorizmi_Resume.pdf"
                         rel="noopener noreferrer"
                     >
                         <svg

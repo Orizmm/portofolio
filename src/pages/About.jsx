@@ -5,6 +5,9 @@ import Footer from "../components/Footer";
 import Sertif_nvidia from "../assets/img/sertif/sertif_nvidia.png";
 import Sertif_ITbox_DA_Basic from "../assets/img/sertif/ITBox-Certificate_Data-Analyst-Level-Basic_alghorizmi.m.jpg";
 import Sertif_ITbox_DA_Intermediate from "../assets/img/sertif/ITBox-Certificate_Data-Analyst-Level-Intermediate_alghorizmi.m.jpg";
+import Sertif_IBM_dataAnalysis from "../assets/img/sertif/Coursera_data_analysis.png";
+import Sertif_IBM_dataVisualization from "../assets/img/sertif/Coursera_data_visualization.png";
+import Sertif_IBM_databases from "../assets/img/sertif/Coursera_databases.png";
 
 const About = () => {
     const skills = [
@@ -33,19 +36,40 @@ const About = () => {
 
     const sertif = [
         {
+            img: Sertif_IBM_databases,
+            title: "Databases and SQL for Data Science with Python",
+            issued: "Sep 2025",
+            link: "https://coursera.org/verify/EVZZUYKA8JWB",
+        },
+        {
+            img: Sertif_IBM_dataVisualization,
+            title: "Data Visualization with Python",
+            issued: "Sep 2025",
+            link: "https://coursera.org/verify/ELYCARA5IBR6",
+        },
+        {
+            img: Sertif_IBM_dataAnalysis,
+            title: "Data Analysis with Python",
+            issued: "Sep 2025",
+            link: "https://coursera.org/verify/O07VW4YQ6H5Y",
+        },
+        {
             img: Sertif_nvidia,
-            title: "Getting Started with Deep Learning",
+            title: "Nvidia Getting Started with Deep Learning",
             issued: "Jun 2025",
+            link: "https://learn.nvidia.com/certificates?id=fg08phCgTd6vo44pkpfq6g#",
         },
         {
             img: Sertif_ITbox_DA_Intermediate,
-            title: "ITBOX Data Analyst Level Intermediate",
+            title: "ITBox Data Analyst Level Intermediate",
             issued: "May 2025",
+            link: "https://itbox.id/certificate-verifier/13EF9F35F-759D50B176-12D45529F",
         },
         {
             img: Sertif_ITbox_DA_Basic,
-            title: "ITBOX Data Analyst Level Basic",
+            title: "ITBox Data Analyst Level Basic",
             issued: "Apr 2025",
+            link: "https://itbox.id/certificate-verifier/13EF9F35F-759D42CF24-12D45529F",
         },
     ];
 
@@ -167,7 +191,7 @@ const About = () => {
                                             {prj.issued}
                                         </p>
                                         <div className="w-full flex justify-end mt-4">
-                                            <a href="" target="_blank">
+                                            <a href={prj.link} target="_blank">
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     fill="none"

@@ -10,26 +10,30 @@ const Projects = () => {
     const projects = [
         {
             img: Gambar_Stunting,
-            title: "Stunting Detection",
+            title: "Stunted Detection",
             tools: "Ipynb, Flask",
-            text: "I built a stunting detection model using a dataset of children’s growth indicators, including weight, height, and age, with the goal of predicting whether a child is stunted or not. After performing data preprocessing such as handling missing values, outlier detection, feature scaling, and addressing data imbalance, I tested several models using cross-validation. Support Vector Machine (SVM) was selected as the best-performing model. On the test dataset, the SVM classifier achieved an accuracy of 98.59%, precision of 96.12%, recall of 98.31%, and F1-score of 97.17%. These results demonstrate that the model performs very well in classifying children into stunted and non-stunted categories, making it a reliable tool for early detection to support health practitioners and policymakers in addressing childhood stunting.",
+            link: "",
+            text: "I built a stunted detection model using a dataset of children’s growth indicators, including weight, height, and age, with the goal of predicting whether a child is stunted or not. After performing data preprocessing such as handling missing values, outlier detection, feature scaling, and addressing data imbalance, I tested several models using cross-validation. Support Vector Machine (SVM) was selected as the best-performing model. On the test dataset, the SVM classifier achieved an accuracy of 98.59%, precision of 96.12%, recall of 98.31%, and F1-score of 97.17%. These results demonstrate that the model performs very well in classifying children into stunted and non-stunted categories, making it a reliable tool for early detection to support health practitioners and policymakers in addressing childhood stunting.",
         },
         {
             img: Gambar_WO,
             title: "Work Order Performance Analysis",
             tools: "Python, Power BI",
+            link: "https://github.com/Orizmm/work-order-analysis",
             text: "I created an interactive Power BI dashboard to analyze work order performance using a dataset that includes work orders, labor hours, parts cost, lead time, services, and payment methods. The dashboard provides insights into total work orders (858), total labor hours (660.25), average lead time (28.02 days), and trends over time. It also highlights technician performance, identifying top contributors by completed work orders, average labor hours, and parts cost usage. In addition, warranty usage is visualized across districts and services, while cost and payment analysis show the most common methods such as C.O.D. and account payments. This project helps stakeholders monitor efficiency, cost allocation, and technician productivity to support better decision-making in work order management.",
         },
         {
             img: Gambar_CountryData,
             title: "Country Data Analysis",
             tools: "Power BI",
+            link: "https://github.com/Orizmm/data-countries-analysis",
             text: "I built a Power BI dashboard to explore global development indicators covering socio-economic and demographic aspects such as GDP per capita, income, life expectancy, fertility rates, child mortality, trade, and inflation. The visualization highlights top-performing countries in terms of GDP per capita, income, and life expectancy, as well as those with the lowest child mortality and fertility rates. It also illustrates the relationship between life expectancy and child mortality, and compares economic performance across nations through imports, exports, and total trade. Additionally, the dashboard provides insights into inflation disparities between countries, including extreme cases like Venezuela and Nigeria. This project demonstrates how Power BI can reveal global development patterns and disparities, making complex data more accessible and actionable.",
         },
         {
             img: Gambar_Sentimen,
             title: "NLP | Deteksi Sentimen Positif Negatif Komentar Tiktok tentang UU Tipikor",
             tools: "Ipynb, TF-IDF",
+            link: "",
             text: "This project focuses on sentiment analysis of TikTok comments related to the Indonesian Anti-Corruption Law (UU Tipikor). The approach uses TF-IDF to extract textual features and Support Vector Machine (SVM) as the classification algorithm. The comments are first preprocessed through case folding, tokenization, stopword removal, and stemming. After that, TF-IDF is applied to represent the text numerically. Finally, SVM is trained to classify the comments into positive or negative sentiments. The evaluation results indicate that the model performs effectively in identifying public sentiment from Indonesian TikTok comments regarding UU Tipikor.",
         },
     ];
@@ -70,7 +74,7 @@ const Projects = () => {
                                         {prj.tools}
                                     </p>
                                     <div className="w-full flex justify-end mt-4">
-                                        <a href="" target="_blank">
+                                        <a href={prj.link} target="_blank">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 width="24"
