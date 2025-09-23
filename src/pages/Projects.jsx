@@ -12,8 +12,8 @@ const Projects = () => {
             img: Gambar_Stunting,
             title: "Stunted Detection",
             tools: "Ipynb, Flask",
-            link: "",
-            text: "I built a stunted detection model using a dataset of children’s growth indicators, including weight, height, and age, with the goal of predicting whether a child is stunted or not. After performing data preprocessing such as handling missing values, outlier detection, feature scaling, and addressing data imbalance, I tested several models using cross-validation. Support Vector Machine (SVM) was selected as the best-performing model. On the test dataset, the SVM classifier achieved an accuracy of 98.59%, precision of 96.12%, recall of 98.31%, and F1-score of 97.17%. These results demonstrate that the model performs very well in classifying children into stunted and non-stunted categories, making it a reliable tool for early detection to support health practitioners and policymakers in addressing childhood stunting.",
+            link: "https://github.com/Orizmm/klasifikasi_stunting",
+            text: "I built a stunted detection model using a dataset of children’s growth indicators, including weight, height, and age, with the goal of predicting whether a child is stunted or not using KNN, SVM, Random Forest, and XGBoost. After performing data preprocessing such as handling missing values, outlier detection, feature scaling, and addressing data imbalance, I tested several models using cross-validation. XGBoost was selected as the best-performing model. On the test dataset, the XGBoost classifier achieved an accuracy of 99.23%, precision of 91.67%, recall of 99.57%, and F1-score of 94.79%. These results demonstrate that the model performs excellently in classifying children into stunted and non-stunted categories, making it a reliable tool for early detection to support health practitioners and policymakers in addressing childhood stunting.",
         },
         {
             img: Gambar_WO,
