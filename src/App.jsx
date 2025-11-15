@@ -3,23 +3,23 @@ import Hero from "./pages/Hero";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
-import Loading from "./components/Loading";
-import { useEffect, useState } from "react";
+// import Loading from "./components/Loading";
+// import { useEffect, useState } from "react";
 
 function App() {
-    const [loading, setLoading] = useState(true);
+    // const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        setTimeout(() => {
-            setLoading(false);
-        }, 3000);
-    }, []);
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         setLoading(false);
+    //     }, 3000);
+    // }, []);
 
     return (
         <>
-            {loading ? (
+            {/* {loading ? (
                 <Loading />
-            ) : (
+            ) : ( */}
                     <Router>
                         <Routes>
                             <Route path="/" element={<Hero />} />
@@ -28,7 +28,7 @@ function App() {
                             <Route path="/blog" element={<Experience />} />
                         </Routes>
                     </Router>
-            )}
+            {/* )} */}
         </>
     );
 }

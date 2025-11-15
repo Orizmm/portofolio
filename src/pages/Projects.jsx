@@ -5,9 +5,17 @@ import Gambar_Stunting from "../assets/img/proyek/proyek-stunting.png"
 import Gambar_CountryData from "../assets/img/proyek/country-data.png"
 import Gambar_Sentimen from "../assets/img/proyek/sentimen_tipikor.png"
 import Gambar_WO from "../assets/img/proyek/wo_performance.png"
+import Gambar_KF from "../assets/img/proyek/kf_data_analytics.png"
 
 const Projects = () => {
     const projects = [
+        {
+            img: Gambar_KF,
+            title: "Project Big Data Analytics Kimia Farma",
+            tools: "Google Looker Studio",
+            link: "https://github.com/Orizmm/rakamin-kf-BDA",
+            text: "This project involved creating a comprehensive dashboard using Google Looker Studio to visualize key performance indicators (KPIs) for Kimia Farma's business operations. The dashboard integrates data from various sources, providing insights into sales performance, customer behavior, and operational efficiency. By leveraging Looker Studio's powerful visualization capabilities, stakeholders can easily monitor trends, identify areas for improvement, and make data-driven decisions to enhance business outcomes.",
+        },
         {
             img: Gambar_Stunting,
             title: "Stunted Detection",

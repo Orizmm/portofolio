@@ -8,6 +8,7 @@ import Sertif_ITbox_DA_Intermediate from "../assets/img/sertif/ITBox-Certificate
 import Sertif_IBM_dataAnalysis from "../assets/img/sertif/Coursera_data_analysis.png";
 import Sertif_IBM_dataVisualization from "../assets/img/sertif/Coursera_data_visualization.png";
 import Sertif_IBM_databases from "../assets/img/sertif/Coursera_databases.png";
+import Sertif_KFxRakamin from "../assets/img/sertif/pbi-kf.png";
 
 const About = () => {
     const skills = [
@@ -35,6 +36,12 @@ const About = () => {
     ];
 
     const sertif = [
+        {
+            img: Sertif_KFxRakamin,
+            title: "Certificate of Achievement - Kimia Farma Big Data Analytics Project Based Internship Program",
+            issued: "Nov 2025",
+            link: "https://www.linkedin.com/in/orizm/details/certifications/1762178025908/single-media-viewer/?profileId=ACoAAE9jZfMBwYlii254EFUR3JYLJ7GS8VZmGvI",
+        },
         {
             img: Sertif_IBM_databases,
             title: "Databases and SQL for Data Science with Python",
