@@ -1,5 +1,5 @@
 import React from "react";
-import gambar from "../assets/img/profile/pp bulat.png";
+import gambar from "../assets/img/profile/profile.jpg";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Sertif_nvidia from "../assets/img/sertif/sertif_nvidia.png";
@@ -99,7 +99,7 @@ const About = () => {
                         <section class="text-sm md:text-lg text-justify flex flex-col gap-4 md:flex-row md:gap-8 md:justify-center md:items-center">
                             <div class="flex justify-center md:w-7/12">
                                 <img
-                                    class="w-9/12 mb-3 fadein-up"
+                                    class="w-9/12 mb-3 fadein-up rounded-full border-4 border-primary md:mb-0"
                                     src={gambar}
                                     alt="Foto"
                                 />
@@ -108,23 +108,31 @@ const About = () => {
                                 <p class="mb-3 md:mb-7 fadein-left fadeins-1">
                                     Hello, my name is Muhammad Al Ghorizmi
                                     Muttaqin, a data enthusiast with a
-                                    background in information technology
-                                    systems, focusing on research and spatial
-                                    data analysis. Currently, I am a final-year
-                                    student who has transitioned from over one
-                                    years of experience in course program
-                                    management and project-based work to pursue
-                                    a career in data analytics. My expertise
+                                    background in Information Technology
+                                    Systems, specializing in research and
+                                    spatial data analysis. I am a fresh graduate
+                                    with hands-on experience gained through an
+                                    internship and various project-based work in
+                                    data analytics. During my internship, I
+                                    worked on data processing, analysis, and
+                                    visualization to support business
+                                    decision-making, strengthening my practical
+                                    skills in handling real-world datasets.
+                                    Previously, I also had over one year of
+                                    experience in course program management,
+                                    which enhanced my project management and
+                                    organizational abilities. My expertise
                                     includes research, analytical thinking, and
-                                    project management, which provide a strong
-                                    foundation for roles as a data scientist or
-                                    analyst. I am proficient in spreadsheets,
-                                    Python, SQL, business intelligence tools,
-                                    and GIS for deriving insights from complex
-                                    datasets. With a commitment to continuous
-                                    learning, I strive to stay updated on the
-                                    latest trends and methodologies in data
-                                    analysis and aim to leverage data to support
+                                    data-driven problem solving, providing a
+                                    strong foundation for roles as a data
+                                    analyst or data scientist. I am proficient
+                                    in spreadsheets, Python, SQL, business
+                                    intelligence tools, and GIS for extracting
+                                    insights from complex data. With a strong
+                                    commitment to continuous learning, I
+                                    actively keep up with the latest trends and
+                                    methodologies in data analysis and aim to
+                                    leverage data to support impactful and
                                     informed decision-making.
                                 </p>
                             </div>

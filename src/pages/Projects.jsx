@@ -6,9 +6,25 @@ import Gambar_CountryData from "../assets/img/proyek/country-data.png"
 import Gambar_Sentimen from "../assets/img/proyek/sentimen_tipikor.png"
 import Gambar_WO from "../assets/img/proyek/wo_performance.png"
 import Gambar_KF from "../assets/img/proyek/kf_data_analytics.png"
+import Gambar_statistik from "../assets/img/proyek/analisis_statistic.png"
+import Gambar_RS from "../assets/img/proyek/rs_dashboard.png"
 
 const Projects = () => {
     const projects = [
+        {
+            img: Gambar_RS,
+            title: "Hospital Operational Dashboard for Vinix7",
+            tools: "Python, Google Looker Studio",
+            link: "https://github.com/Orizmm/Hospital-Operational-Dashboard",
+            text: "This project involved creating a comprehensive operational dashboard for Vinix7, a company specializing in health and wellness products. The dashboard was designed to provide insights into hospital operations, including patient flow, resource utilization, and key performance indicators (KPIs). Using Google Looker Studio, I integrated data from various sources to visualize metrics such as patient admissions, bed occupancy rates, average length of stay, and staff performance. The interactive dashboard allows hospital administrators and stakeholders to monitor operational efficiency, identify bottlenecks, and make informed decisions to enhance patient care and optimize resource allocation.",
+        },
+        {
+            img: Gambar_statistik,
+            title: "Campaign statistics analysis for Vinix7",
+            tools: "Ipynb",
+            link: "https://github.com/Orizmm/analisis-statistik-strategi-promosi",
+            text: "This project involved building an interactive dashboard to analyze hospital outpatient service performance. It explored patient visit trends, payment method distribution, and waiting time across different clinics. The analysis identified peak visit days, high dependency on BPJS payments, and critical bottlenecks in specific departments with long waiting times. The dashboard provides actionable insights to improve service efficiency, reduce queue times, and support data-driven operational decisions.",
+        },
         {
             img: Gambar_KF,
             title: "Project Big Data Analytics Kimia Farma",

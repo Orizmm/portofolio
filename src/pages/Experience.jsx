@@ -4,6 +4,16 @@ import Footer from "../components/Footer";
 
 const experiences = [
     {
+        period: "Feb 2026 - Present",
+        title: "Junior Data Analyst Intern (Vinix7)",
+        details: [
+            "Executed end-to-end data analysis workflow, including data collection (survey design & secondary data), cleaning, transformation, and exploratory data analysis (EDA) to uncover patterns and insights",
+            "Processed and prepared datasets by handling missing values, outliers, and inconsistencies using Excel and spreadsheet techniques",
+            "Developed interactive dashboards and data visualizations using Tableau and Looker Studio to support business monitoring and decision-making",
+            "Applied SQL and basic statistical analysis, and leveraged AI tools to accelerate data exploration and deliver actionable insights through data storytelling",
+        ],
+    },
+    {
         period: "Oct 2025 - Nov 2025",
         title: "Project-Based Virtual Intern : Kimia Farma Big Data Analytics x Rakamin Academy",
         details: [
@@ -11,8 +21,8 @@ const experiences = [
             "Performing an end-to-end ETL (Extract, Transform, Load) process, starting from importing, cleaning, to loading 4 main datasets (transactions, inventory, branches, products) into the Google BigQuery platform",
             "Design and execute complex SQL queries to combine data, create calculated metrics (such as net sales & net profit), and implement business logic to produce one master analytical table",
             "Design and build an interactive performance analytics dashboard to visualize revenue trends, regional performance, and product analysis",
-            "Identifying crucial business insights. Key outcomes of this analysis include identifying West Java as a core market, identifying operational improvement opportunities in high-performing branches, and formulating strategic recommendations for product cross-selling strategies to increase revenue"
-        ]
+            "Identifying crucial business insights. Key outcomes of this analysis include identifying West Java as a core market, identifying operational improvement opportunities in high-performing branches, and formulating strategic recommendations for product cross-selling strategies to increase revenue",
+        ],
     },
     {
         period: "Oct 2024 – Sep 2025",
