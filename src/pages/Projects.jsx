@@ -16,14 +16,14 @@ const Projects = () => {
             title: "Hospital Operational Dashboard for Vinix7",
             tools: "Python, Google Looker Studio",
             link: "https://github.com/Orizmm/Hospital-Operational-Dashboard",
-            text: "This project involved creating a comprehensive operational dashboard for Vinix7, a company specializing in health and wellness products. The dashboard was designed to provide insights into hospital operations, including patient flow, resource utilization, and key performance indicators (KPIs). Using Google Looker Studio, I integrated data from various sources to visualize metrics such as patient admissions, bed occupancy rates, average length of stay, and staff performance. The interactive dashboard allows hospital administrators and stakeholders to monitor operational efficiency, identify bottlenecks, and make informed decisions to enhance patient care and optimize resource allocation.",
+            text: "This project involved building an interactive dashboard to analyze hospital outpatient service performance. It explored patient visit trends, payment method distribution, and waiting time across different clinics. The analysis identified peak visit days, high dependency on BPJS payments, and critical bottlenecks in specific departments with long waiting times. The dashboard provides actionable insights to improve service efficiency, reduce queue times, and support data-driven operational decisions.",
         },
         {
             img: Gambar_statistik,
             title: "Campaign statistics analysis for Vinix7",
             tools: "Ipynb",
             link: "https://github.com/Orizmm/analisis-statistik-strategi-promosi",
-            text: "This project involved building an interactive dashboard to analyze hospital outpatient service performance. It explored patient visit trends, payment method distribution, and waiting time across different clinics. The analysis identified peak visit days, high dependency on BPJS payments, and critical bottlenecks in specific departments with long waiting times. The dashboard provides actionable insights to improve service efficiency, reduce queue times, and support data-driven operational decisions.",
+            text: "This project focused on evaluating the effectiveness of marketing campaigns through statistical analysis. It compared two promotional strategies (20% discount vs cashback) using hypothesis testing and identified a significant difference in revenue performance. Additionally, regression analysis was applied to measure the impact of advertising spend on web traffic, revealing a strong positive relationship. The insights help businesses optimize promotional strategies and allocate marketing budgets more effectively.",
         },
         {
             img: Gambar_KF,
