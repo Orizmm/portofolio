@@ -9,6 +9,7 @@ import Sertif_IBM_dataAnalysis from "../assets/img/sertif/Coursera_data_analysis
 import Sertif_IBM_dataVisualization from "../assets/img/sertif/Coursera_data_visualization.png";
 import Sertif_IBM_databases from "../assets/img/sertif/Coursera_databases.png";
 import Sertif_KFxRakamin from "../assets/img/sertif/pbi-kf.png";
+import Sertif_BNSP from "../assets/img/sertif/sertif_bnsp_depan.jpg";
 
 const About = () => {
     const skills = [
@@ -19,7 +20,11 @@ const About = () => {
         "Flask",
         "Bootstrap",
         "Data Visualization",
-        "GIS",
+        "Data Analysis",
+        "Analytical Thinking",
+        "Problem Solving",
+        "Project Management",
+        "Communication",
     ];
 
     const tools = [
@@ -29,6 +34,7 @@ const About = () => {
         "Git",
         "GitHub",
         "Tableau",
+        "Data Studio",
         "Power BI",
         "Excel",
         "Figma",
@@ -36,6 +42,12 @@ const About = () => {
     ];
 
     const sertif = [
+        {
+            img: Sertif_BNSP,
+            title: "Certificate of Competency - Associate Data Science",
+            issued: "Apr 2026",
+            link: "",
+        },
         {
             img: Sertif_KFxRakamin,
             title: "Certificate of Achievement - Kimia Farma Big Data Analytics Project Based Internship Program",

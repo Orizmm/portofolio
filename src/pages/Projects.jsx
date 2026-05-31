@@ -8,9 +8,25 @@ import Gambar_WO from "../assets/img/proyek/wo_performance.png"
 import Gambar_KF from "../assets/img/proyek/kf_data_analytics.png"
 import Gambar_statistik from "../assets/img/proyek/analisis_statistic.png"
 import Gambar_RS from "../assets/img/proyek/rs_dashboard.png"
+import Gambar_HR from "../assets/img/proyek/hr_attrition.png"
+import Gambar_Hotel from "../assets/img/proyek/hotel_operational.png"
 
 const Projects = () => {
     const projects = [
+        {
+            img: Gambar_Hotel,
+            title: "Hotel Operational Dashboard for Vinix7",
+            tools: "Python, Tableau",
+            link: "https://github.com/Orizmm/hotel-operational-analysis",
+            text: "This project involved building an interactive dashboard to analyze hotel operational performance. It explored guest stay patterns, payment method distribution, and booking trends. The analysis identified why direct web revenue was significantly lower than OTA bookings and provided actionable insights to improve direct booking strategies.",
+        },
+        {
+            img: Gambar_HR,
+            title: "HR Attrition Analysis",
+            tools: "Python, Tableau",
+            link: "https://github.com/Orizmm/hr-attrition-analysis",
+            text: "This project focuses on analyzing employee attrition using a dataset that includes various features such as age, job role, department, salary, and work environment. The analysis involves data preprocessing, exploratory data analysis (EDA), and data visualization. The insights gained from this project can help organizations develop strategies to improve employee retention and create a more positive work environment.",
+        },
         {
             img: Gambar_RS,
             title: "Hospital Operational Dashboard for Vinix7",
@@ -65,6 +81,39 @@ const Projects = () => {
     return (
         <>
             <Navbar />
+
+            {/* PPT */}
+            <section id="presentation" className="bg-base-100 pt-10 pb-5">
+                <div className="max-w-7xl mx-auto px-3 flex flex-col items-center">
+                    <h2 className="text-4xl text-center mb-2 text-primary font-bold">
+                        Project Presentation
+                    </h2>
+                    <p className="mb-6 text-center">
+                        Watch the presentation of my projects
+                    </p>
+
+                    {/* Kotak Kontainer PPT */}
+                    <div className="w-full bg-[#1e1e24] p-4 md:p-6 rounded-2xl border border-[#FFA500] shadow-lg flex flex-col items-center">
+                        {/* Wrapper iframe yang akan dijadikan fullscreen */}
+                        <div
+                            className="w-full aspect-video bg-black rounded-lg overflow-hidden flex justify-center items-center relative"
+                        >
+                            {/* Ganti URL src di bawah dengan link embed dari Google Slides/Canva */}
+                            <iframe
+                                src="https://www.canva.com/design/DAHLMj_vm_Q/dotZ1Z4PJEpospBpG9bV0g/view?embed"
+                                frameBorder="0"
+                                width="100%"
+                                height="100%"
+                                allowFullScreen={true}
+                                title="Project Presentation"
+                                className="w-full h-full"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Project */}
             <section id="projects">
                 <div class="max-w-7xl mx-auto flex flex-col items-center justify-between py-10 bg-base-100">
                     <h2 class="text-4xl text-center mb-1 text-primary font-bold">
