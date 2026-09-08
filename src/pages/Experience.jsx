@@ -4,7 +4,17 @@ import Footer from "../components/Footer";
 
 const experiences = [
     {
-        period: "Feb 2026 - Present",
+        period: "Jun 2026 - Aug 2026",
+        title: "Data Analyst (ITsvirative.id)",
+        details: [
+            "Consolidated and validated performance data from 40k+ marketing data to ensure data accuracy for monitoring and reporting",
+            "Built interactive dashboards using Data Studio and performance reports to visualize KPIs and support business performance evaluation",
+            "Performed statistical analysis using T-Test and translated data into actionable insights that supported marketing team and strategic decision making",
+            "Successfully reduced the return rate by 4% by evaluating regional delivery data and courier efficiency via Google Data Studio",
+        ],
+    },
+    {
+        period: "Feb 2026 - Jun 2026",
         title: "Junior Data Analyst Intern (Vinix7)",
         details: [
             "Executed end-to-end data analysis workflow, including data collection (survey design & secondary data), cleaning, transformation, and exploratory data analysis (EDA) to uncover patterns and insights",
