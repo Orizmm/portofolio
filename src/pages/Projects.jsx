@@ -95,12 +95,10 @@ const Projects = () => {
                     {/* Kotak Kontainer PPT */}
                     <div className="w-full bg-[#1e1e24] p-4 md:p-6 rounded-2xl border border-[#FFA500] shadow-lg flex flex-col items-center">
                         {/* Wrapper iframe yang akan dijadikan fullscreen */}
-                        <div
-                            className="w-full aspect-video bg-black rounded-lg overflow-hidden flex justify-center items-center relative"
-                        >
+                        <div className="w-full aspect-video bg-black rounded-lg overflow-hidden flex justify-center items-center relative">
                             {/* Ganti URL src di bawah dengan link embed dari Google Slides/Canva */}
                             <iframe
-                                src="https://www.canva.com/design/DAHLMj_vm_Q/dotZ1Z4PJEpospBpG9bV0g/view?embed"
+                                src="https://www.canva.com/design/DAHWNhibF8w/MEu8XI7G4cNyqM-AluQAtg/view?embed"
                                 frameBorder="0"
                                 width="100%"
                                 height="100%"

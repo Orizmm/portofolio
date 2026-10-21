@@ -8,7 +8,7 @@ const experiences = [
         title: "Data Analyst (ITsvirative.id)",
         details: [
             "Consolidated and validated performance data from 40k+ marketing data to ensure data accuracy for monitoring and reporting",
-            "Built interactive dashboards using Data Studio and performance reports to visualize KPIs and support business performance evaluation",
+            "Built 3 interactive dashboards using Data Studio and performance reports to visualize KPIs and support business performance evaluation",
             "Performed statistical analysis using T-Test and translated data into actionable insights that supported marketing team and strategic decision making",
             "Successfully reduced the return rate by 4% by evaluating regional delivery data and courier efficiency via Google Data Studio",
         ],
@@ -19,7 +19,7 @@ const experiences = [
         details: [
             "Executed end-to-end data analysis workflow, including data collection (survey design & secondary data), cleaning, transformation, and exploratory data analysis (EDA) to uncover patterns and insights",
             "Processed and prepared datasets by handling missing values, outliers, and inconsistencies using Excel and spreadsheet techniques",
-            "Developed interactive dashboards and data visualizations using Tableau and Looker Studio to support business monitoring and decision-making",
+            "Developed 3 interactive dashboards and data visualizations using Tableau and Looker Studio to support business monitoring and decision-making",
             "Applied SQL and basic statistical analysis, and leveraged AI tools to accelerate data exploration and deliver actionable insights through data storytelling",
         ],
     },
@@ -82,7 +82,7 @@ const Experience = () => (
                 {experiences.map((exp, index) => (
                     <div
                         key={index}
-                        className="bg-base-200 p-6 rounded-xl shadow-lg border border-gray-700"
+                        className="bg-base-200 p-6 rounded-b-xl rounded-t-none shadow-lg border border-gray-700 border-t-8 border-t-[#FFA500] transition-transform transform hover:scale-105"
                     >
                         <p className="text-sm text-gray-400 italic mb-2 flex items-center">
                             {exp.period}
