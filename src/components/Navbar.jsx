@@ -169,7 +169,7 @@ const Navbar = () => {
                 <div className="navbar-end hidden lg:flex">
                     <a
                         className="btn text-xl text-neutral transition-colors duration-300 bg-[#FFA500] border-none hover:bg-primary hover:text-white"
-                        href="/Resume Muhammad Al Ghorizmi Muttaqin English.pdf"
+                        href="/Resume Muhammad Al Ghorizmi Muttaqin.pdf"
                         download="Resume Muhammad Al Ghorizmi Muttaqin.pdf"
                         rel="noopener noreferrer"
                     >

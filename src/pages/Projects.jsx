@@ -10,9 +10,17 @@ import Gambar_statistik from "../assets/img/proyek/analisis_statistic.png"
 import Gambar_RS from "../assets/img/proyek/rs_dashboard.png"
 import Gambar_HR from "../assets/img/proyek/hr_attrition.png"
 import Gambar_Hotel from "../assets/img/proyek/hotel_operational.png"
+import Gambar_Cyclistic from "../assets/img/proyek/cyclistic_dashboard.png"
 
 const Projects = () => {
     const projects = [
+        {
+            img: Gambar_Cyclistic,
+            title: "Cyclistic Bike Share Analysis",
+            tools: "Python, Tableau",
+            link: "https://github.com/Orizmm/cycistic-bike-analysis-dashboard",
+            text: "This project involved analyzing the usage patterns of a bike-sharing service. The analysis included examining bike usage by time of day, day of the week, and season. The insights gained from this project can help improve the allocation of bikes and encourage casual users to become members.",
+        },
         {
             img: Gambar_Hotel,
             title: "Hotel Operational Dashboard for Vinix7",

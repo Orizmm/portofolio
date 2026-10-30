@@ -10,6 +10,7 @@ import Sertif_IBM_dataVisualization from "../assets/img/sertif/Coursera_data_vis
 import Sertif_IBM_databases from "../assets/img/sertif/Coursera_databases.png";
 import Sertif_KFxRakamin from "../assets/img/sertif/pbi-kf.png";
 import Sertif_BNSP from "../assets/img/sertif/sertif_bnsp_depan.jpg";
+import Sertif_Google_Data_Analytics from "../assets/img/sertif/Coursera_data_analytics.png";
 
 const About = () => {
     const skills = [
@@ -42,6 +43,12 @@ const About = () => {
     ];
 
     const sertif = [
+        {
+            img: Sertif_Google_Data_Analytics,
+            title: "Google Data Analytics",
+            issued: "Oct 2026",
+            link: "https://coursera.org/share/07df5f19ad3323ac7abf69dae5bc53dc",
+        },
         {
             img: Sertif_BNSP,
             title: "Certificate of Competency - Associate Data Science",
